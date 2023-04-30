@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { supabase } from './supabaseClient';
 import 'tufte-css/tufte.css';
-import logo from './logo.svg';
 import './App.css';
 
 function Sedanlibrary() {

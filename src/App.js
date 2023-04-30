@@ -6,7 +6,7 @@ import './App.css';
 function Sedanlibrary() {
   const [mySedans, setMySedans] = useState ([]);
   async function getSedans() {
-    let { data: sedans, error } = await supabase
+    let { data: sedans } = await supabase
       .from('sedans')
       .select('*')
     setMySedans(sedans);
@@ -35,7 +35,7 @@ function Sedanlibrary() {
 function Suvlibrary() {
   const [mySuvs, setMySuv] = useState ([]);
   async function getSuvs() {
-    let { data: suvs, error } = await supabase
+    let { data: suvs } = await supabase
       .from('suvs')
       .select('*')
     setMySuv(suvs);
